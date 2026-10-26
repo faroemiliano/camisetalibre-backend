@@ -1,0 +1,6 @@
+{
+  "secret": "test-only-secret",
+  "password": "Contraseña-1234",
+  "passwordHash": "0123456789abcdef0123456789abcdef:f28d256422b3d6c7fec44a63052d6fdec9cf1c96d34d96dec320189d42d856c7adc6c22ab85be508970a4d6b1c2abf6b699f64b51ee08e3072c5081c501e967d",
+  "token": "eyJzdWIiOiJsZWdhY3ktdXNlciIsImV4cCI6NDEwMjQ0NDgwMH0.FMvo8_UguTSmiA9yzNuSeC_H-_LKWKIwPJZ4dpYhc20"
+}

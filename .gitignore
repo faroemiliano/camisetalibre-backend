@@ -1,0 +1,17 @@
+node_modules
+.env
+.env.*
+!.env.example
+data/*
+!data/.gitkeep
+.venv/
+__pycache__/
+*.py[cod]
+data/*.lock
+data/*.backup-*
+.DS_Store
+*.log
+*.dump
+*.backup
+uploads/
+.pytest_cache/
