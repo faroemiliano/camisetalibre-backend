@@ -6,10 +6,10 @@ from datetime import datetime, timezone
 
 from sqlalchemy import select
 
-from app.config import Settings
-from app.database import Database
-from app.models import Customer, Project
-from app.seed import seed_catalog
+from app.core.config import Settings
+from app.db.session import Database
+from app.db.models import Customer, Project
+from app.db.seed import seed_catalog
 
 
 def import_legacy(session, path):

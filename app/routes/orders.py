@@ -3,10 +3,10 @@ from sqlalchemy import select
 from sqlalchemy.orm import selectinload
 
 from app.dependencies import CustomerDependency, SessionDependency
-from app.models import Address, Order, OrderItem, Project
-from app.pricing import calculate_items
-from app.schemas import OrderInput
-from app.serializers import address_data, order_data
+from app.db.models import Address, Order, OrderItem, Project
+from app.services.pricing import calculate_items
+from app.schemas.api import OrderInput
+from app.services.serializers import address_data, order_data
 
 router = APIRouter(prefix="/api/orders", tags=["Compras"])
 

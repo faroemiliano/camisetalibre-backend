@@ -2,9 +2,9 @@ from fastapi import APIRouter, HTTPException
 from sqlalchemy import select
 
 from app.dependencies import CustomerDependency, SessionDependency
-from app.editor_schemas import PreferencesInput, WorkspaceInput
-from app.models import Customer, CustomerPreferences, EditorWorkspace, FabricTier, Product, Project, now
-from app.serializers import timestamp
+from app.schemas.editor import PreferencesInput, WorkspaceInput
+from app.db.models import Customer, CustomerPreferences, EditorWorkspace, FabricTier, Product, Project, now
+from app.services.serializers import timestamp
 
 router = APIRouter(prefix="/api/customers/me", tags=["Borradores y preferencias"])
 

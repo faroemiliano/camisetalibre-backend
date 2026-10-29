@@ -2,9 +2,9 @@ from fastapi import APIRouter, HTTPException
 from sqlalchemy import select
 
 from app.dependencies import CustomerDependency, SessionDependency
-from app.models import Customer, EditorWorkspace, Product, Project, now
-from app.schemas import ProjectInput, ProjectResponse, ProjectsResponse
-from app.serializers import project_data
+from app.db.models import Customer, EditorWorkspace, Product, Project, now
+from app.schemas.api import ProjectInput, ProjectResponse, ProjectsResponse
+from app.services.serializers import project_data
 
 router = APIRouter(prefix="/api/projects", tags=["Diseños"])
 

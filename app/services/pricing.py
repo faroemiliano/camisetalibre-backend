@@ -3,7 +3,7 @@ from decimal import Decimal, ROUND_HALF_UP
 
 from fastapi import HTTPException
 
-from app.models import FabricTier, Product, Size
+from app.db.models import FabricTier, Product, Size
 
 
 def calculate_items(items, session):

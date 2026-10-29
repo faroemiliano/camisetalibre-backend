@@ -3,7 +3,7 @@ from decimal import Decimal
 
 from sqlalchemy.dialects.postgresql import insert
 
-from app.models import FabricTier, Product, Size
+from app.db.models import FabricTier, Product, Size
 
 PRODUCTS = [
     {"id": "camiseta", "name": "Camiseta", "base_price": Decimal("28000.00")},

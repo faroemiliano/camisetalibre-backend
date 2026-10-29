@@ -1,7 +1,12 @@
 # CamisetaLibre Backend
 
 API Python 3.12+ con FastAPI, PostgreSQL, SQLAlchemy y migraciones Alembic.
-El frontend está en `../camisetalibre` y consume `/api` mediante el proxy Vite.
+El frontend se mantiene en su propio repositorio y consume `/api` mediante el
+proxy Vite. En este equipo está en `~/Downloads/camisetalibre-frontend`.
+
+La organización de módulos, persistencia y migraciones se describe en
+[Estructura del backend](./docs/ESTRUCTURA.md). Las próximas tareas están en
+[docs/TODO.md](./docs/TODO.md).
 
 ## Ejecutar
 

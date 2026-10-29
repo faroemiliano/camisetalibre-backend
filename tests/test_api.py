@@ -13,13 +13,13 @@ from sqlalchemy import create_engine, func, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.schema import CreateSchema, DropSchema
 
-from app.config import Settings
-from app.database import Database
+from app.core.config import Settings
+from app.db.session import Database
 from app.main import create_app
 from app.manage import import_legacy
-from app.models import Address, Base, Customer, FabricTier, Order, OrderItem, Payment, Product, Project
-from app.security import hash_password, read_token
-from app.seed import seed_catalog
+from app.db.models import Address, Base, Customer, FabricTier, Order, OrderItem, Payment, Product, Project
+from app.core.security import hash_password, read_token
+from app.db.seed import seed_catalog
 
 LEGACY = json.loads((Path(__file__).parent / 'fixtures/node-auth.json').read_text())
 

@@ -3,10 +3,10 @@ from sqlalchemy import select
 from sqlalchemy.exc import IntegrityError
 
 from app.dependencies import CustomerDependency, SessionDependency
-from app.models import Customer
-from app.schemas import CustomerResponse, LoginInput, RegisterInput, SessionResponse
-from app.security import create_token, hash_password, password_matches
-from app.serializers import customer_data
+from app.db.models import Customer
+from app.schemas.api import CustomerResponse, LoginInput, RegisterInput, SessionResponse
+from app.core.security import create_token, hash_password, password_matches
+from app.services.serializers import customer_data
 
 router = APIRouter(prefix="/api/auth", tags=["Autenticación"])
 

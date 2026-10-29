@@ -2,9 +2,9 @@ from fastapi import APIRouter
 from sqlalchemy import select
 
 from app.dependencies import SessionDependency
-from app.models import FabricTier, Product, Size
-from app.pricing import calculate_items
-from app.schemas import QuoteInput
+from app.db.models import FabricTier, Product, Size
+from app.services.pricing import calculate_items
+from app.schemas.api import QuoteInput
 
 router = APIRouter(tags=["Catálogo y presupuestos"])
 

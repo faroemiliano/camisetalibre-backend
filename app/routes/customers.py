@@ -2,9 +2,9 @@ from fastapi import APIRouter
 from sqlalchemy import select
 
 from app.dependencies import CustomerDependency, SessionDependency
-from app.models import Address
-from app.schemas import AddressInput, ProfileInput
-from app.serializers import address_data, customer_data
+from app.db.models import Address
+from app.schemas.api import AddressInput, ProfileInput
+from app.services.serializers import address_data, customer_data
 
 router = APIRouter(prefix="/api/customers/me", tags=["Clientes"])
 

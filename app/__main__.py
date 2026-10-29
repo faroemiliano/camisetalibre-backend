@@ -2,7 +2,7 @@ import argparse
 
 import uvicorn
 
-from app.config import Settings
+from app.core.config import Settings
 
 
 def main():

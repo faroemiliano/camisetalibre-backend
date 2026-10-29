@@ -4,7 +4,7 @@ from concurrent.futures import ThreadPoolExecutor
 from sqlalchemy import select
 
 from test_api import DatabaseCase
-from app.models import CustomerPreferences, EditorWorkspace, Project
+from app.db.models import CustomerPreferences, EditorWorkspace, Project
 
 IMAGE = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aK1sAAAAASUVORK5CYII='
 

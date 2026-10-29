@@ -8,9 +8,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException
 
-from app.config import Settings
+from app.core.config import Settings
 from app.routes import auth, projects, catalog, customers, orders, workspace
-from app.database import Database
+from app.db.session import Database
 
 
 def create_app(settings: Settings | None = None, database: Database | None = None) -> FastAPI:
